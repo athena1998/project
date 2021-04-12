@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="faq_daoBean" class="dao.FAQDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="goods_daoBean" class="dao.GoodsDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="member_daoBean" class="dao.MemberDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="orderinfo_daoBean" class="dao.OrderInfoDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="temp_daoBean" class="dao.TempDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<!-- 2020-11-24 추가 : ManagerDAO.java -->
+	<bean id="manager_daoBean" class="dao.ManagerDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="cart_daoBean" class="dao.CartDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<!-- 2020-11-25 추가 : ManageCSCenterDAO.java -->
+	<bean id="managecscenter_daoBean" class="dao.ManageCSCenterDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="qna_daoBean" class="dao.QnaDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="qnaAnswer_daoBean" class="dao.QnaAnswerDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<!-- 2020-11-27 추가 : ConsultDAO.java -->
+	<bean id="consult_daoBean" class="dao.ConsultDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="managerorder_daoBean" class="dao.ManagerOrderDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+	<bean id="managergoods_daoBean" class="dao.ManagerGoodsDAO">
+		<property name="sqlSession" ref="sqlSessionBean" />
+	</bean>
+</beans>
